@@ -15,7 +15,7 @@ const Enhance = () => {
   const fileInputRef = useRef(null);
   const dropAreaRef = useRef(null);
 
-  const API_BASE = 'http://localhost:8013/api';
+  const API_BASE = process.env.REACT_APP_API_URL || 'http://localhost:8013/api';
 
   useEffect(() => {
     const dropArea = dropAreaRef.current;
